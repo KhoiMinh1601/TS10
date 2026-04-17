@@ -237,7 +237,7 @@ h1 {
 
     #sbdInput,
     #searchBtn {
-        width: 20%;
+        width: 80%;
         max-width: 360px;
         box-sizing: border-box;
     }
