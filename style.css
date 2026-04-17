@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ảnh 2 bên */
+.side-images {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.side-img {
+    height: 100%;
+    width: 22vw;
+    object-fit: cover;
+}
+
+/* Khung giữa */
+.container {
+    z-index: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    width: 600px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.logo {
+    max-width: 400px;
+}
+
+h1 {
+    color: #0f62fe;
+}
+
+/* Search */
+.search-container {
+    margin: 20px 0;
+}
+
+#sbdInput {
+    padding: 12px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#searchBtn {
+    padding: 12px 20px;
+    background: #0f62fe;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Kết quả */
+.score-report {
+    border: 2px solid #1e40af;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.student-info-box {
+    border: 1px solid #1e40af;
+    padding: 10px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.score-item {
+    display: grid;
+    grid-template-columns: 120px 1fr 40px;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.score-bar {
+    background: #e5e7eb;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.score-bar-fill {
+    background: #1e40af;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.total-score {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e40af;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .side-images {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #sbdInput, #searchBtn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+/* KHUNG */
+.report-container {
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.report-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* INFO TABLE */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.info-table td {
+    border: 1px solid #e5e7eb;
+    padding: 8px;
+    font-size: 14px;
+}
+
+/* SCORE TABLE */
+.score-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.score-table th {
+    background: #2563eb;
+    color: white;
+    padding: 10px;
+}
+
+.score-table td {
+    border: 1px solid #e5e7eb;
+    padding: 10px;
+    text-align: center;
+}
+
+.score-table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+/* TOTAL */
+.total-box {
+    margin-top: 15px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.total-box span {
+    font-size: 26px;
+    color: #2563eb;
+}
