@@ -237,18 +237,10 @@ h1 {
 
     #sbdInput,
     #searchBtn {
-        width: 100%;
+        width: 20%;
         max-width: 360px;
         box-sizing: border-box;
     }
-
-    #sbdInput,
-    #cccdInput,
-    #emailInput {
-        padding: 14px;
-        border-radius: 10px;
-    }
-
     #searchBtn {
         padding: 14px;
         font-weight: 600;
