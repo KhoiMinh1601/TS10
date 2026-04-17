@@ -193,3 +193,28 @@ h1 {
     font-size: 26px;
     color: #2563eb;
 }
+/* ===== SEARCH GỌN CHO MOBILE ===== */
+@media screen and (max-width: 768px) {
+
+    .search-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    #sbdInput {
+        flex: 1;
+        padding: 10px 12px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    #searchBtn {
+        padding: 10px 14px;
+        font-size: 14px;
+        border-radius: 8px;
+        white-space: nowrap;
+    }
+}
