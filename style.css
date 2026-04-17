@@ -193,28 +193,65 @@ h1 {
     font-size: 26px;
     color: #2563eb;
 }
-/* ===== SEARCH GỌN CHO MOBILE ===== */
+/* Điều chỉnh khoảng cách thông tin học sinh trên điện thoại */
+@media screen and (max-width: 768px) {
+    .student-info-box strong {
+        width: 100px; /* giảm từ 200 xuống còn 130 */
+        font-size: 14px;
+    }
+
+    .student-info-box p {
+        font-size: 14px;
+    }
+}
+.search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#sbdInput,
+#cccdInput,
+#emailInput {
+    width: 100%;          /* 🔥 đều nhau */
+    max-width: 350px;     /* giữ đẹp */
+    font-size: 15px;
+}
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px; /* cách đều đẹp hơn */
+}
+/* ===== MOBILE INPUT FIX CHUẨN 100% ===== */
 @media screen and (max-width: 768px) {
 
     .search-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-        gap: 8px;
+        gap: 14px;
         width: 100%;
     }
 
-    #sbdInput {
-        flex: 1;
-        padding: 10px 12px;
-        font-size: 14px;
-        border-radius: 8px;
+    #sbdInput,
+    #searchBtn {
+        width: 100%;
+        max-width: 360px;
+        box-sizing: border-box;
+    }
+
+    #sbdInput,
+    #cccdInput,
+    #emailInput {
+        padding: 14px;
+        border-radius: 10px;
     }
 
     #searchBtn {
-        padding: 10px 14px;
-        font-size: 14px;
-        border-radius: 8px;
-        white-space: nowrap;
+        padding: 14px;
+        font-weight: 600;
+        border-radius: 10px;
     }
 }
